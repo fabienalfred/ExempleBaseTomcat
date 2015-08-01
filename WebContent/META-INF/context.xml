@@ -1,0 +1,25 @@
+<Context reloadable="true">
+	<Resource name="jdbc/jpa"
+				auth="Container"
+				type="javax.sql.DataSource"
+				driverClassName="com.mysql.jdbc.Driver"
+				url="jdbc:mysql://localhost:3306/persistance"
+				username="root"
+				password=""
+				maxActive="20"
+				maxIdle="10"
+				maxWait="10000"
+				removeAbandoned="true" />
+				
+	<Resource name="jdbc/france"
+				auth="Container"
+				type="javax.sql.DataSource"
+				driverClassName="com.mysql.jdbc.Driver"
+				url="jdbc:mysql://localhost:3306/france"
+				username="root"
+				password=""
+				maxActive="20"
+				maxIdle="10"
+				maxWait="10000"
+				removeAbandoned="true" />
+</Context>
